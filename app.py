@@ -10,7 +10,7 @@ st.set_page_config(page_title="H5 Compressor", page_icon="📦")
 st.title("📦 H5 High-Compression Tool")
 
 st.sidebar.write(f"**Server Limit:** {max_size} MB")
-if max_size < 700:
+if max_size < 800:
     st.sidebar.warning("Warning: Config not detected. Using default 200MB limit.")
 
 uploaded_file = st.file_uploader("Upload .h5 file (Max 799MB)", type=["h5", "hdf5"])
